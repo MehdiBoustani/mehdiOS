@@ -18,7 +18,7 @@
 
     keyboardLayout = "fr";
 
-    location = "Liège";
+    location = "Liege";
     timeZone = "Europe/Brussels";
     defaultLocale = "en_US.UTF-8";
     extraLocale = "fr_BE.UTF-8";

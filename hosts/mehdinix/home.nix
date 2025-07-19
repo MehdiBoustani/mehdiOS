@@ -22,6 +22,7 @@
     ../../home/programs/duckduckgo-colorscheme
     ../../home/programs/discord
     ../../home/programs/tailscale
+    ../../home/programs/cursor
 
     # Scripts
     ../../home/scripts # All scripts
