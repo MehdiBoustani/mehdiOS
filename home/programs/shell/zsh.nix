@@ -79,6 +79,21 @@ in {
 
       gaa = "git add .";
       gcm = "git commit -m";
+
+      # Laravel Sail aliases
+      sail = "[ -f sail ] && bash sail || bash vendor/bin/sail";
+      sa = "sail artisan";
+      sae = "sail artisan migrate";
+      sat = "sail artisan tinker";
+      sap = "sail artisan migrate --path=";
+      sar = "sail artisan migrate:rollback";
+      saf = "sail artisan migrate:fresh";
+      sas = "sail artisan migrate:fresh --seed";
+      
+      # Dev shortcuts
+      dev = "npm run dev";
+      build = "npm run build";
+      start = "npm start";
     };
 
     initContent =

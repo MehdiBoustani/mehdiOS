@@ -12,6 +12,8 @@
     ../../nixos/utils.nix
     ../../nixos/tailscale.nix
     ../../nixos/hyprland.nix
+    ../../nixos/docker.nix
+    ../../nixos/databases.nix
 
     # You should let those lines as is
     ./hardware-configuration.nix

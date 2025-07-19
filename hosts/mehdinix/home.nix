@@ -68,8 +68,37 @@
       python3
       jq
       just
-      pnpm
       air
+      docker
+      redis
+      postgresql
+      mysql80
+      docker-compose
+      gcc
+
+      # PHP & Laravel
+      php83                    # PHP 8.3
+      php83Packages.composer   # Composer pour PHP
+      php83Extensions.pdo_mysql
+      php83Extensions.pdo_pgsql
+      php83Extensions.redis
+      php83Extensions.gd
+      php83Extensions.curl
+      php83Extensions.zip
+      php83Extensions.mbstring
+      php83Extensions.xml
+      php83Extensions.bcmath
+      php83Extensions.intl
+
+      # Web Dev Tools
+      nodePackages.pnpm
+      nodePackages.yarn
+      nodePackages.typescript
+      nodePackages.eslint
+      nodePackages.nodemon
+       
+      # Database tools
+      sqlite
 
       # Utils
       zip
