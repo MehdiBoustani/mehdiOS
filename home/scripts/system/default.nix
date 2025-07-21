@@ -38,11 +38,11 @@
       #   pkill tofi
       else
         options=(
-          "󰌾 Lock"
-          "󰍃 Logout"
-          " Suspend"
-          "󰑐 Reboot"
-          "󰿅 Shutdown"
+          "󰌾   Lock"
+          "󰍃   Logout"
+          "   Suspend"
+          "󰑐   Reboot"
+          "󰿅   Shutdown"
         )
 
         selected=$(printf '%s\n' "''${options[@]}" | wofi -p " Powermenu" --dmenu)
@@ -79,11 +79,11 @@
       #   pkill tofi
       else
         options=(
-          "󰅶 Caffeine"
-          "󰖔 Night-shift"
-          " Nixy"
-          "󰈊 Hyprpicker"
-          "󰖂 Toggle VPN"
+          "󰅶   Caffeine"
+          "󰖔   Night-shift"
+          "   Nixy"
+          "󰈊   Hyprpicker"
+          "󰖂   Toggle VPN"
         )
 
         selected=$(printf '%s\n' "''${options[@]}" | wofi -p " Quickmenu" --dmenu)

@@ -107,8 +107,8 @@ in {
         then "0 0 0 0"
         else "0px 0px 3px 1px #16161e";
       theme.bar.buttons.style = "default";
-      theme.bar.buttons.monochrome = true;
-      theme.bar.menus.monochrome = true;
+      theme.bar.buttons.monochrome = false;
+      theme.bar.menus.monochrome = false;
       theme.bar.menus.card_radius = toString rounding + "px";
       theme.bar.menus.border.size = toString border-size + "px";
       theme.bar.menus.border.radius = toString rounding + "px";
@@ -196,6 +196,9 @@ in {
       menus.power.lowBatteryNotification = true;
 
       wallpaper.enable = false;
+
+      # Disable global colors in hyprpanel settings
+      theme.useGlobalColors = false;
 
       theme.bar.buttons.workspaces.hover = accent-alt;
       theme.bar.buttons.workspaces.active = accent;
