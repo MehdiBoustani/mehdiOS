@@ -16,7 +16,8 @@
       + config.var.username
       + "/.config/nixos"; # The path of the nixos configuration directory
 
-    keyboardLayout = "fr";
+    keyboardLayout = "be";
+    consoleKeyMap = "be-latin1";   
 
     location = "Liege";
     timeZone = "Europe/Brussels";

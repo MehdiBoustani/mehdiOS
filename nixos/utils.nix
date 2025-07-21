@@ -51,7 +51,7 @@ in {
       resyncTimer = "10m";
     };
   };
-  console.keyMap = keyboardLayout;
+  console.keyMap = config.var.consoleKeyMap;
 
   environment.variables = {
     XDG_DATA_HOME = "$HOME/.local/share";
