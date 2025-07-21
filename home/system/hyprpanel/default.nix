@@ -25,6 +25,9 @@
   notificationOpacity = 90;
 
   location = config.var.location;
+
+  homeDir = "/home/${config.var.username}";
+
 in {
   wayland.windowManager.hyprland.settings.exec-once = ["hyprpanel"];
 
@@ -173,24 +176,22 @@ in {
       menus.dashboard.shortcuts.right.shortcut3.tooltip = "Screenshot";
 
       menus.dashboard.directories.left.directory1.label = "     Home";
-      menus.dashboard.directories.left.directory1.command = "xdg-open /home/mehdi";
+      menus.dashboard.directories.left.directory1.command = "xdg-open ${homeDir}";
 
       menus.dashboard.directories.left.directory2.label = "󰲂     Documents";
-      menus.dashboard.directories.left.directory2.command = "xdg-open /home/mehdi/Documents";
+      menus.dashboard.directories.left.directory2.command = "xdg-open ${homeDir}/Documents";
 
       menus.dashboard.directories.left.directory3.label = "󰉍     Downloads";
-      menus.dashboard.directories.left.directory3.command = "xdg-open /home/mehdi/Downloads";
+      menus.dashboard.directories.left.directory3.command = "xdg-open ${homeDir}/Downloads";
 
       menus.dashboard.directories.right.directory1.label = "     Desktop";
-      menus.dashboard.directories.right.directory1.command = "xdg-open /home/mehdi/Desktop";
+      menus.dashboard.directories.right.directory1.command = "xdg-open ${homeDir}/Desktop";
 
       menus.dashboard.directories.right.directory2.label = "     Videos";
-      menus.dashboard.directories.right.directory2.command = "xdg-open /home/mehdi/Videos";
+      menus.dashboard.directories.right.directory2.command = "xdg-open ${homeDir}/Videos";
 
       menus.dashboard.directories.right.directory3.label = "󰉏     Pictures";
-      menus.dashboard.directories.right.directory3.command = "xdg-open /home/mehdi/Pictures";
-
-
+      menus.dashboard.directories.right.directory3.command = "xdg-open ${homeDir}/Pictures";
 
       menus.power.lowBatteryNotification = true;
 
